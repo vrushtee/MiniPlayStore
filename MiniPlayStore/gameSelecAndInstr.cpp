@@ -91,10 +91,26 @@ void gameSelecAndInstr::TicTacToe()
 		char op = _getch();
 
 		if (op == '1') t.TicTacToelevelSelection();
-		else if (op == '2') Instruction();
+		else if (op == '2') TicTacToeInstrct();
 		else if (op == '3') exit(0);
 
 	} while (1);
+}
+
+void gameSelecAndInstr::TicTacToeInstrct()
+{
+	system("cls");
+	cout << "Instructions";
+	cout << "\n----------------";
+	cout << "\n 1. In this game there will be two players one being you and other being the computer. ";
+	cout << "\n 2. When input your name and select the game will start.";
+	cout << "\n 3. You will have 5 choices them being stone, paper, scissor, lizard and spock.";
+	cout << "\n 4. After you enter the number you wish to display the computer will play it's chance.";
+	cout << "\n 5. If you win you will be taken to the next level but if you lose you have to play that level again.";
+	cout << "\n ";
+	cout << "\n GOODLUCK!";
+	cout << "\n\nPress any key to go back to menu";
+	_getch();
 }
 
 void gameSelecAndInstr::Instruction()
@@ -103,6 +119,17 @@ void gameSelecAndInstr::Instruction()
 	cout << "Instructions";
 	cout << "\n----------------";
 	cout << "\n Press spacebar to make player activate";
+	cout << "\n\nPress any key to go back to menu";
+	_getch();
+}
+
+void gameSelecAndInstr::MainInstruct()
+{
+	system("cls");
+	cout << "Instructions";
+	cout << "\n----------------";
+	cout << "\n 1. Please select a game by pressing the assigned numbers.";
+	cout << "\n 2. Pressing the assigned number will take you to the game interface.";
 	cout << "\n\nPress any key to go back to menu";
 	_getch();
 }

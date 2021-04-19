@@ -7,6 +7,8 @@ public:
 	void Shooting();
 	void Snake();
 	void TicTacToe();
+	void TicTacToeInstrct();
 	void Instruction();
+	void MainInstruct();
 };
 

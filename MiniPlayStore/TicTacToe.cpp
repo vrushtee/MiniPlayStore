@@ -15,14 +15,14 @@ void TicTacToe::TicTacToelevelSelection()
 	cout << "\n";
 	system("cls");
 
-	cout << plyrName << " which level would you like to play? " << endl;
+	cout << plyrName << " Which level would you like to play? " << endl;
 	cout << "\n";
-	cout << "Level 1" << endl;
-	cout << "Level 2" << endl;
-	cout << "Level 3" << endl;
+	cout << "1. Beginner" << endl;
+	cout << "2. Intermediate" << endl;
+	cout << "3. Advance" << endl;
 	cout << "\n";
+	
 	cin >> levelChoice;
-
 	if (levelChoice == 1)
 	{
 		levelOne();

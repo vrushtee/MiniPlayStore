@@ -25,7 +25,7 @@ void RacingManipulation::racingLevelSelection()
 		p.getPosi(10, 9); cout << "1. Level 1";
 		p.getPosi(10, 10); cout << "2. Level 2";
 		p.getPosi(10, 11); cout << "3. Level 3";
-		p.getPosi(10, 11); cout << "4. Exit";
+		p.getPosi(10, 12); cout << "4. Exit";
 		p.getPosi(10, 13); cout << "Select option: ";
 		char op = _getch();
 
@@ -54,7 +54,7 @@ void RacingManipulation::levelOne()
 	p.getPosi(WIN_WIDTH + 7, 13); cout << "-------- ";
 	p.getPosi(WIN_WIDTH + 2, 14); cout << " A Key - Left";
 	p.getPosi(WIN_WIDTH + 2, 15); cout << " D Key - Right";
-	p.getPosi(WIN_WIDTH + 2, 16); cout << " Spacebar = Shoot";
+	p.getPosi(WIN_WIDTH + 2, 16); cout << " Q/q= Quit";
 
 	p.getPosi(10, 5); cout << "Press any key to start";
 	_getch();
@@ -73,6 +73,10 @@ void RacingManipulation::levelOne()
 			{
 				if (p.playerPos < WIN_WIDTH - 7)
 					p.playerPos += 2;
+			}
+			if (ch == 'q' || ch == 'Q')
+			{
+				p.CarRacing();
 			}
 			if (ch == 27)
 			{
@@ -160,7 +164,8 @@ void RacingManipulation::levelTwo()
 		p.drawEnemy(0);
 		p.drawEnemy(1);
 		p.drawEnemy(2);
-		if (collision() == 1) {
+		if (collision() == 1) 
+		{
 			gameOver();
 
 			return;
@@ -217,7 +222,7 @@ void RacingManipulation::levelThree()
 	p.getPosi(WIN_WIDTH + 7, 13); cout << "-------- ";
 	p.getPosi(WIN_WIDTH + 2, 14); cout << " A Key - Left";
 	p.getPosi(WIN_WIDTH + 2, 15); cout << " D Key - Right";
-	p.getPosi(WIN_WIDTH + 2, 16); cout << " Spacebar = Shoot";
+	p.getPosi(WIN_WIDTH + 2, 16); cout << " Q/q= Quit";
 
 	p.getPosi(10, 5); cout << "Press any key to start";
 	_getch();

@@ -60,6 +60,7 @@ void ShootingManipulation::levelOne()
 	p.getPosi(WIN_WIDTH + 2, 14); cout << " A Key - Left";
 	p.getPosi(WIN_WIDTH + 2, 15); cout << " D Key - Right";
 	p.getPosi(WIN_WIDTH + 2, 16); cout << " Spacebar = Shoot";
+	p.getPosi(WIN_WIDTH + 2, 17); cout << " Q/q= Quit";
 
 	p.getPosi(10, 5); cout << "Press any key to start";
 	_getch();
@@ -78,6 +79,10 @@ void ShootingManipulation::levelOne()
 			{
 				if (p.playerPos < WIN_WIDTH - 7)
 					p.playerPos += 2;
+			}
+			if (ch == 'q' || ch == 'Q')
+			{
+				p.Shooting();
 			}
 			if (ch == 32)
 			{
@@ -158,6 +163,7 @@ void ShootingManipulation::levelTwo()
 	p.getPosi(WIN_WIDTH + 2, 14); cout << " A Key - Left";
 	p.getPosi(WIN_WIDTH + 2, 15); cout << " D Key - Right";
 	p.getPosi(WIN_WIDTH + 2, 16); cout << " Spacebar = Shoot";
+	p.getPosi(WIN_WIDTH + 2, 17); cout << " Q/q= Quit";
 
 	p.getPosi(10, 5); cout << "Press any key to start";
 	_getch();
@@ -176,6 +182,10 @@ void ShootingManipulation::levelTwo()
 			{
 				if (p.playerPos < WIN_WIDTH - 7)
 					p.playerPos += 2;
+			}
+			if (ch == 'q' || ch == 'Q')
+			{
+				p.Shooting();
 			}
 			if (ch == 32)
 			{
@@ -264,6 +274,7 @@ void ShootingManipulation::levelThree()
 	p.getPosi(WIN_WIDTH + 2, 14); cout << " A Key - Left";
 	p.getPosi(WIN_WIDTH + 2, 15); cout << " D Key - Right";
 	p.getPosi(WIN_WIDTH + 2, 16); cout << " Spacebar = Shoot";
+	p.getPosi(WIN_WIDTH + 2, 17); cout << " Q/q= Quit";
 
 	p.getPosi(10, 5); cout << "Press any key to start";
 	_getch();
@@ -282,6 +293,10 @@ void ShootingManipulation::levelThree()
 			{
 				if (p.playerPos < WIN_WIDTH - 7)
 					p.playerPos += 2;
+			}
+			if (ch == 'q' || ch == 'Q')
+			{
+				p.Shooting();
 			}
 			if (ch == 32)
 			{
